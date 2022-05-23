@@ -1,0 +1,164 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: 'Spoqa Han Sans Neo', 'sans-serif';
+}
+
+body {
+  color: #FFFFFF;
+  text-shadow: 3px 3px 6px rgba(87, 87, 87, 0.5);
+}
+
+/* Reset CSS */
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+input,
+button {
+  font-family: 'Spoqa Han Sans Neo', 'sans-serif';
+  font-size: 16px;
+}
+
+input:focus,
+input:active,
+button:focus,
+button:active {
+  outline: none;
+  box-shadow: none;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+/* sr-only */
+.sr-only {
+  position: absolute;
+  overflow: hidden;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  border: 0;
+  clip: rect(0,0,0,0);
+}
+
+/* opacity */
+.opacity {
+  opacity: 0.5;
+}
+
+/* btn */
+
+.btn {
+  color: #FFFFFF;
+  border: none;
+  border-radius: 45px;
+  width: 120px;
+  height: 50px;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 300ms ease-out;
+}
+
+/* mobile */
+
+main {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url("./assets/background-image-mobile.png") no-repeat center center;
+  background-size: cover;
+}
+
+section {
+  text-align: center;
+  width: 315px;
+  height: 450px;
+  padding: 50px 30px;
+
+  /* glass texture */
+  background: rgba( 255, 255, 255, 0.25 );
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 5.5px );
+  -webkit-backdrop-filter: blur( 6.5px );
+  border-radius: 25px;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+.title {
+  font-size: 35px;
+  margin-bottom: 35px;
+}
+
+.desc {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+#number-input {
+  width: 250px;
+  height: 50px;
+  border-radius: 45px;
+  border: none;
+  text-align: center;
+  margin-bottom: 25px;
+  transition: box-shadow 300ms ease-out;
+}
+
+#number-input::placeholder {
+  font-size: 12px;
+  color: #a2a2a2;
+}
+
+#number-input:hover {
+  box-shadow: 0 0 0 4px rgba(250, 21, 151, 0.5);
+}
+
+
+.start-btn {
+  background-color: #DB38B0;
+  margin-right: 5px;
+}
+
+.start-btn:hover {
+  background-color: #ff0b58;
+}
+
+.reset-btn {
+  background-color: #5166FD;
+}
+
+.reset-btn:hover {
+  background-color: #122dfe;
+}
+
+.btn-box {
+  margin-bottom: 20px;
+}
+
+.result {
+  font-size: 18px;
+  /* border: 1px solid #fff; */
+  padding: 0 25px;
+  margin-bottom: 20px;
+}
+
+.chance {
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+.sukyungdev {
+  position: fixed;
+  font-size: 12px;
+  right: 20px;
+  bottom: 20px;
+}
+
+

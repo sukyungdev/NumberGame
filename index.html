@@ -4,10 +4,44 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css"
+      rel="stylesheet"
+      type="text/css"
+    />
     <link rel="stylesheet" href="style.css" />
     <title>Number Game</title>
   </head>
   <body>
+    <main>
+      <section>
+        <h1 class="title">Number Game</h1>
+        <p class="desc">숫자를 맞혀 보세요!</p>
+        <form action="#">
+          <label for="number-input" class="sr-only">숫자입력창</label>
+          <input
+            type="number"
+            required
+            placeholder="1부터 100까지의 숫자를 입력해주세요."
+            id="number-input"
+          />
+          <div class="btn-box">
+            <button type="submit" class="start-btn btn">START</button>
+            <button type="button" class="reset-btn btn">RESET</button>
+          </div>
+        </form>
+        <div class="result">결과가 이곳에 나타납니다!</div>
+        <p class="chance">남은 chance : 7</p>
+      </section>
+      <a
+        href="https://github.com/sukyungdev/NumberGame"
+        target="_blank"
+        class="sukyungdev"
+        aria-label="sukyungdev github"
+      >
+        coded by sukyungdev
+      </a>
+    </main>
     <script src="./app.js"></script>
   </body>
 </html>
