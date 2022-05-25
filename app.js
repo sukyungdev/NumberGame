@@ -58,7 +58,7 @@ function gameStart(event){
   chances --;
   chanceArea.innerText = `남은 찬스 : ${chances}`;
 
-  if (chances < 1) {
+  if (chances < 0) {
     resultArea.innerText = "찬스가 모두 소진되었습니다. 리셋해주세요.";
     startBtn.disabled = true;
   }
