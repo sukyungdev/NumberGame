@@ -22,6 +22,8 @@ startBtn.addEventListener("click", gameStart);
 resetBtn.addEventListener("click", gameReset);
 userInput.addEventListener("focus", function () {
   userInput.value = "";});
+
+
 //function
 
 //game-start
@@ -31,13 +33,13 @@ function gameStart(event){
   
   //check user-value
   if(userValue < 0 || userValue > 100 || userValue === "") {
-    resultArea.innerText = "1부터 100까지의 숫자를 입력해 주세요.";
+    resultArea.innerText = "Please input a number from 1 to 100.";
     return;
   }
 
   // history user value
   if(history.includes(userValue)) {
-    resultArea.innerText = "이미 입력한 값입니다. 다른값을 입력해 주세요.";
+    resultArea.innerText = "Number already inputed. Please input a different number.";
     return;
   }
 
@@ -46,20 +48,21 @@ function gameStart(event){
   
   // compare user number and computer number
   if(userValue < computerNum) {
-    resultArea.innerText = "UP";
+    resultArea.innerText = "Hint: The answer is a larger number.";
   } else if (userValue > computerNum) {
-    resultArea.innerText = "DOWN";
+    resultArea.innerText = "Hint: The answer is a smaller number.";
   } else if(userValue == computerNum){
-    resultArea.innerText = "맞추셨습니다!";
+    resultArea.innerText = "That's correct!!😊";
     startBtn.disabled = true;
     startBtn.classList.add("opacity")
   }
   
+  //check chance
   chances --;
-  chanceArea.innerText = `남은 찬스 : ${chances}`;
+  chanceArea.innerText = `chance : ${chances}`;
 
-  if (chances < 0) {
-    resultArea.innerText = "찬스가 모두 소진되었습니다. 리셋해주세요.";
+  if (chances == 0) {
+    resultArea.innerText = "All the chances are gone. Please reset it.";
     startBtn.disabled = true;
   }
 
@@ -72,8 +75,8 @@ function gameReset(){
   startBtn.classList.remove("opacity")
   userInput.value = "";
   chances = 7;
-  resultArea.innerText = "결과가 이곳에 나타납니다!";
-  chanceArea.innerText = `남은 찬스 : ${chances}`;
+  resultArea.innerText = "You can watch result here!";
+  chanceArea.innerText = `chance: ${chances}`;
   history = [];
 }
 

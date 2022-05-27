@@ -80,7 +80,7 @@ main {
 section {
   text-align: center;
   width: 315px;
-  height: 450px;
+  height: 480px;
   padding: 50px 30px;
 
   /* glass texture */
@@ -152,7 +152,7 @@ section {
 
 .chance {
   font-size: 15px;
-  margin-bottom: 10px;
+  /* margin-bottom: 10px; */
 }
 .sukyungdev {
   position: fixed;
@@ -244,30 +244,24 @@ section {
   }
   
   .box div:nth-child(2) {
-    top: 70%;
-    left: 50%;
-    animation: animate 7s linear infinite;
-  }
-  
-  .box div:nth-child(3) {
     top: 60%;
     left: 10%;
     animation: animate 9s linear infinite;
   }
   
-  .box div:nth-child(4) {
+  .box div:nth-child(3) {
     top: 20%;
     left: 60%;
     animation: animate 10s linear infinite;
   }
   
-  .box div:nth-child(5) {
+  .box div:nth-child(4) {
     top: 67%;
     left: 90%;
     animation: animate 6s linear infinite;
   }
   
-  .box div:nth-child(6) {
+  .box div:nth-child(5) {
     top: 80%;
     left: 70%;
     animation: animate 12s linear infinite;
@@ -283,7 +277,7 @@ section {
   }
 
   100%{
-    transform: scale(1.5) translateY(-90px);
+    transform: scale(1.5) translateY(-100px);
     opacity: 0;
   }
   
