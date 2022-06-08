@@ -1,9 +1,9 @@
-// 1. 유저가 숫자를 입력한다.
-// 2. 컴퓨터는 랜덤 숫자를 뽑는다.
-// 3. 유저가 입력한 숫자와 컴퓨터 숫자를 비교한다.
-// 4. if computer's number is bigger tha user, than
-// output is "up" else if smaller "down" else same "ok"
-
+// Number guess game
+// 1. The user inputs a number.
+// 2. The JavaScript selects random number.
+// 3. Compare the number input by the user with the random number of the JavaScript.
+// 4. The user has to guess the number of JavaScripts within seven times.
+// 5. The user can reset the game by clicking the Reset button.
 
 // creation value
 const userInput = document.querySelector("#number-input");
@@ -39,7 +39,7 @@ function gameStart(event){
 
   // history user value
   if(history.includes(userValue)) {
-    resultArea.innerText = "Number already inputed. Please input a different number.";
+    resultArea.innerText = "This number already input. Please input a different number.";
     return;
   }
 
