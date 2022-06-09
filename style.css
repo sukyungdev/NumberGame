@@ -74,7 +74,7 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: url("./assets/background-image-mobile.png") no-repeat center center;
+  background: url("./assets/background-image-mobile.jpg") no-repeat center center;
   background-size: cover;
 }
 
@@ -173,7 +173,7 @@ section {
   main {
     position: absolute;
     z-index: -5;
-    background: url("./assets/background-image-desktop.png") no-repeat center center;
+    background: url("./assets/background-image-desktop.jpg") no-repeat center center;
     background-size: cover;
   }
 
