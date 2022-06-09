@@ -1,4 +1,4 @@
-# NumberGame
+# NumberGuessGame
 
 ## 목차
 
@@ -12,9 +12,9 @@
 ```
 
 vanilla js로 구현한 숫자 맞추기 게임입니다.  
-[https://numbergame-sukyungdev.netlify.app/](https://numbergame-sukyungdev.netlify.app/)
+[https://numberguessgame-sukyungdev.netlify.app/](https://numberguessgame-sukyungdev.netlify.app/)
 
-<img src="https://user-images.githubusercontent.com/96860670/170072878-080bd952-ee3b-4ee0-90fa-42ddfab76b37.png" alt="NumberGame img" width = "550px"/>
+<img src="https://user-images.githubusercontent.com/96860670/172842806-a1eda54c-033b-4cfb-bd79-e9b4fe87bf1f.png" alt="NumberGame img" width = "550px"/>
 
 ## 사용언어
 
@@ -39,6 +39,10 @@ HTML/CSS/Vanilla JavaScript
 
 - 모바일과 데스크탑에 맞춰 반응형 코드를 추가하였습니다.(960px)
 
+모바일 버전
+
+<img src="https://user-images.githubusercontent.com/96860670/172842933-62a5d33c-27ce-4cf3-8ffb-c98382c06fa5.png" alt="NumberGame img" width = "300px"/>
+
 ### 2. Glassmorphism UI 구현
 
 - glassmorphism이란?
@@ -55,3 +59,4 @@ netlify를 이용하여 배포하였습니다.
 
 - 2022/05/24 : deploy 완료, 리드미 추가.
 - 2022/05/25 : chance 관련 버그 수정.
+- 2022/06/06 : background img 용량 최적화.
