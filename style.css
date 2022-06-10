@@ -1,3 +1,6 @@
+/* Coded by sukyungdev
+last update 2022.06.10 */
+
 /* Reset CSS */
 
 * {
@@ -146,14 +149,12 @@ section {
 
 .result {
   font-size: 18px;
-  /* border: 1px solid #fff; */
   padding: 0 25px;
   margin-bottom: 20px;
 }
 
 .chance {
   font-size: 15px;
-  /* margin-bottom: 10px; */
 }
 .sukyungdev {
   position: fixed;
@@ -221,7 +222,7 @@ section {
 
   /* animation */
 
-  .wrapper {
+  /* .wrapper {
     display:block;
     position: absolute;
     width: 100%;
@@ -266,12 +267,12 @@ section {
     top: 80%;
     left: 70%;
     animation: animate 12s linear infinite;
-  }
+  } */
 
 }
 
 
-@keyframes animate {
+/* @keyframes animate {
   0%{
     transform: scale(0) translateY(0);
     opacity: 1;
@@ -282,4 +283,4 @@ section {
     opacity: 0;
   }
   
-}
+} */

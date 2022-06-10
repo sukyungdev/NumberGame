@@ -1,3 +1,6 @@
+// Coded by sukyungdev
+// last update 2022.06.10
+
 // Number guess game
 // 1. The user inputs a number.
 // 2. The JavaScript selects random number.
@@ -32,7 +35,7 @@ function gameStart(event){
   userValue = userInput.value;
   
   //check user-value
-  if(userValue < 0 || userValue > 100 || userValue === "") {
+  if(userValue <= 0 || userValue > 100 || userValue === "") {
     resultArea.innerText = "Please input a number from 1 to 100.";
     return;
   }
@@ -46,7 +49,11 @@ function gameStart(event){
   history.push(userValue);
   console.log(history);
   
-  // compare user number and computer number
+  //check chance
+  chances --;
+  chanceArea.innerText = `chance : ${chances}`;
+
+ // compare user number and computer number
   if(userValue < computerNum) {
     resultArea.innerText = "Hint: The answer is a larger number.";
   } else if (userValue > computerNum) {
@@ -58,12 +65,11 @@ function gameStart(event){
   }
   
   //check chance
-  chances --;
-  chanceArea.innerText = `chance : ${chances}`;
 
-  if (chances == 0) {
+  if (chances < 0) {
     resultArea.innerText = "All the chances are gone. Please reset it.";
     startBtn.disabled = true;
+    chanceArea.innerText = `chance : 0`;
   }
 
 }
